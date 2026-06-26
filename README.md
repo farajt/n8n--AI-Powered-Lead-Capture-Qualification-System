@@ -235,16 +235,6 @@ Toggle workflow to Active. Every new form submission now triggers the full autom
 - Build a dashboard in Google Sheets with charts
 - Add a follow-up email sequence for grade A leads
 
-## 📈 Part of a Larger System
-
-| Phase | Project | Status |
-|---|---|---|
-| Phase 1 | Daily Tech News Digest | ✅ Complete |
-| Phase 2 | Intelligent Email Classifier | ✅ Complete |
-| Phase 2 | AI Lead Capture System | ✅ Complete |
-| Phase 3 | AI Research Agent | 🔜 Coming |
-| Phase 4 | Full AI Automation Agency Stack | 🔜 Coming |
-
 ---
 
 ## 👨‍💻 Author
