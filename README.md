@@ -303,13 +303,6 @@ Every new form submission now triggers the full automation.
 ```text
 screenshots/telegram.png
 ```
-
-### Welcome Email
-
-```text
-screenshots/email.png
-```
-
 ---
 
 # 🔧 Customization Ideas
