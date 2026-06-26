@@ -299,25 +299,20 @@ Every new form submission now triggers the full automation.
 ```
 ---
 
-```markdown
----
+🔧 Customization Ideas
+Add Slack notifications alongside Telegram
+Connect to HubSpot or Pipedrive instead of Notion
+Add SMS alerts via Twilio for very high scoring leads
+Build a dashboard in Google Sheets with charts
+Add a follow-up email sequence for Grade A leads
+👨‍💻 Author
 
-# 🔧 Customization Ideas
+Faraj Tamboli
 
-- Add Slack notifications alongside Telegram
-- Connect to HubSpot or Pipedrive instead of Notion
-- Add SMS alerts via Twilio for very high scoring leads
-- Build a dashboard in Google Sheets with charts
-- Add a follow-up email sequence for Grade A leads
-
----
-
-# 👨‍💻 Author
-
-**Faraj Tamboli**
+AI/ML Engineer & Automation Developer
 
 Building production-grade automation systems using n8n, AI APIs, and cloud infrastructure.
-```
 
-
+GitHub: https://github.com/farajt
+Building: AI automation agency
 
