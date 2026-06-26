@@ -279,7 +279,24 @@ Toggle the workflow to **Active**.
 Every new form submission now triggers the full automation.
 
 ---
+## 📸 Screenshots
 
+### Workflow Canvas
+![Canvas](screenshots/canvas.png)
+
+### Google Sheets Log
+![Sheets](screenshots/sheets.png)
+
+### Notion CRM
+![Notion](screenshots/notion.png)
+
+### Telegram Alert
+![Telegram](screenshots/telegram.png)
+
+### Welcome Email
+![Email](screenshots/email.png)
+
+---
 ## 🔧 Customization Ideas
 - Add Slack notifications alongside Telegram
 - Connect to HubSpot or Pipedrive instead of Notion
