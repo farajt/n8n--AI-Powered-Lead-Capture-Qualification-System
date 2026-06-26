@@ -138,9 +138,9 @@ Handle Invalid → Telegram alert (missing fields warning)
 | Field              | Source  | Example                                   |
 | :----------------- | :------ | :---------------------------------------- |
 | full_name          | Form    | Faraj Tamboli                             |
-| email              | Form    | [faraj@gmail.com](mailto:faraj@gmail.com) |
+| email              | Form    | [abc@gmail.com](mailto:faraj@gmail.com) |
 | company            | Form    | Test Company                              |
-| phone              | Form    | +919876543210                             |
+| phone              | Form    | +91*******                             |
 | budget             | Form    | ₹10,000 – ₹50,000                         |
 | service            | Form    | AI Automation                             |
 | message            | Form    | I need help automating...                 |
