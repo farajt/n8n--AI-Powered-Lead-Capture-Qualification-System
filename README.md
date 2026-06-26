@@ -280,37 +280,30 @@ Every new form submission now triggers the full automation.
 
 ---
 
+```markdown
 # 📸 Screenshots
 
 ### Workflow Canvas
 
-```text
-screenshots/canvas.png
-```
+![Workflow Canvas](screenshots/canvas.png)
 
 ### Google Sheets Log
 
-```text
-screenshots/sheets.png
-```
+![Google Sheets Log](screenshots/sheets.png)
 
 ### Notion CRM
 
-```text
-screenshots/notion.png
-```
+![Notion CRM](screenshots/notion.png)
 
 ### Telegram Alert
 
-```text
-screenshots/telegram.png
-```
+![Telegram Alert](screenshots/telegram.png)
 
 ### Welcome Email
 
-```text
-screenshots/email.png
+![Welcome Email](screenshots/email.png)
 ```
+
 
 ---
 
