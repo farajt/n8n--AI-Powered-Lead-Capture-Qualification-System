@@ -74,10 +74,10 @@ Every lead is automatically analyzed by Groq AI (LLaMA 3) and scored on:
 ---
 
 ````markdown
-````markdown
+
 # 🏗 Workflow Architecture
 
-```text
+
 Tally Form (Lead submits inquiry)
                │
                ▼
@@ -113,15 +113,8 @@ Telegram
           ▼
 Gmail
 (Welcome Email)
-```
-````
-
-````
 
 ```
-```
-
-
 # 🗂 Data Captured
 
 | Field              | Source  | Example                                   |
