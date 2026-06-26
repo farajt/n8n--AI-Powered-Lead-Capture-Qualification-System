@@ -287,24 +287,12 @@ Every new form submission now triggers the full automation.
 - Build a dashboard in Google Sheets with charts
 - Add a follow-up email sequence for grade A leads
 
-## 📈 Part of a Larger System
-
-| Phase | Project | Status |
-|---|---|---|
-| Phase 1 | Daily Tech News Digest | ✅ Complete |
-| Phase 2 | Intelligent Email Classifier | ✅ Complete |
-| Phase 2 | AI Lead Capture System | ✅ Complete |
-| Phase 3 | AI Research Agent | 🔜 Coming |
-| Phase 4 | Full AI Automation Agency Stack | 🔜 Coming |
-
 ---
 
 ## 👨‍💻 Author
 
 **Faraj Tamboli**
-AI/ML Engineer & Automation Developer
+
 Building production-grade automation systems using n8n, AI APIs, and cloud infrastructure.
 
-- GitHub: [@farajt](https://github.com/farajt)
-- Building: AI automation agency
 
