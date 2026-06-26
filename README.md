@@ -73,48 +73,66 @@ Every lead is automatically analyzed by Groq AI (LLaMA 3) and scored on:
 
 ---
 
-````markdown
-
 # 🏗 Workflow Architecture
 
+```text
+Tally Form (lead submits inquiry)
 
-Tally Form (Lead submits inquiry)
-               │
-               ▼
-Webhook Trigger (n8n receives data)
-               │
-               ▼
-Validate Data (Code Node)
-               │
-               ▼
-        IF: Valid Submission?
-          ┌──────────┴──────────┐
-          │                     │
-        YES                    NO
-          │                     │
-          ▼                     ▼
-Groq AI Lead Scoring     Handle Invalid Submission
-          │              (Telegram Warning)
-          ▼
-Parse AI Response
-          │
-          ▼
-Google Sheets
-(Log Lead Details)
-          │
-          ▼
-Notion CRM
-(Create Database Page)
-          │
-          ▼
-Telegram
-(Instant AI Alert)
-          │
-          ▼
-Gmail
-(Welcome Email)
+        │
+        ▼
 
+Webhook Trigger (n8n receives data instantly)
+
+        │
+        ▼
+
+Validate Data (Code node — check required fields)
+
+        │
+        ▼
+
+      IF node (valid submission?)
+
+      ├────────────── TRUE ──────────────┐
+      │                                  │
+      ▼                                  │
+
+Groq AI (score and qualify lead)
+
+      │
+      ▼
+
+Parse AI Response (Code node)
+
+      │
+      ▼
+
+Google Sheets (log all data)
+
+      │
+      ▼
+
+Notion CRM (create database page)
+
+      │
+      ▼
+
+Telegram (instant alert with AI analysis)
+
+      │
+      ▼
+
+Gmail (welcome email to lead)
+
+      │
+
+      └────────────── FALSE ──────────────►
+
+Handle Invalid → Telegram alert (missing fields warning)
 ```
+
+---
+
 # 🗂 Data Captured
 
 | Field              | Source  | Example                                   |
@@ -264,35 +282,33 @@ Every new form submission now triggers the full automation.
 
 ## 📸 Screenshots
 
-
-
 ### Workflow Canvas
-
 ![Canvas](screenshots/canvas.png)
 
-
-
 ### Google Sheets Log
-
 ![Sheets](screenshots/sheets.png)
 
-
-
 ### Notion CRM
-
 ![Notion](screenshots/notion.png)
 
+### Telegram Alert
+![Telegram](screenshots/telegram.png)
 
+### Welcome Email
+![Email](screenshots/email.png)
+```
 
 ### Telegram Alert
 
-![Telegram](screenshots/telegram.png)
-
-
+```text
+screenshots/telegram.png
+```
 
 ### Welcome Email
 
-![Email](screenshots/email.png)
+```text
+screenshots/email.png
+```
 
 ---
 
@@ -309,4 +325,7 @@ Every new form submission now triggers the full automation.
 # 👨‍💻 Author
 
 **Faraj Tamboli**
+
 Building production-grade automation systems using n8n, AI APIs, and cloud infrastructure.
+
+
