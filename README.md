@@ -73,65 +73,74 @@ Every lead is automatically analyzed by Groq AI (LLaMA 3) and scored on:
 
 ---
 
+````markdown
 # 🏗 Workflow Architecture
 
 ```text
-Tally Form (lead submits inquiry)
+                    ┌──────────────────────┐
+                    │      Tally Form      │
+                    │  (Lead Submission)   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │  Webhook Trigger      │
+                    │        (n8n)          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   Validate Data       │
+                    │     (Code Node)       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   IF: Valid Lead?    │
+                    └───────┬───────┬──────┘
+                            │       │
+                         YES│       │NO
+                            │       │
+                            ▼       ▼
+                 ┌──────────────────────┐    ┌──────────────────────────────┐
+                 │   Groq AI Scoring     │    │ Handle Invalid Submission    │
+                 │   (LLaMA 3 Model)     │    │ Telegram Warning Notification│
+                 └──────────┬───────────┘    └──────────────────────────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Parse AI Response     │
+                 │     (Code Node)       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   Google Sheets       │
+                 │   Log Lead Details    │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │     Notion CRM        │
+                 │   Create Database     │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Telegram Notification │
+                 │   AI Lead Summary     │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   Gmail Welcome Mail  │
+                 │  Sent to the Lead     │
+                 └──────────────────────┘
+````
 
-        │
-        ▼
-
-Webhook Trigger (n8n receives data instantly)
-
-        │
-        ▼
-
-Validate Data (Code node — check required fields)
-
-        │
-        ▼
-
-      IF node (valid submission?)
-
-      ├────────────── TRUE ──────────────┐
-      │                                  │
-      ▼                                  │
-
-Groq AI (score and qualify lead)
-
-      │
-      ▼
-
-Parse AI Response (Code node)
-
-      │
-      ▼
-
-Google Sheets (log all data)
-
-      │
-      ▼
-
-Notion CRM (create database page)
-
-      │
-      ▼
-
-Telegram (instant alert with AI analysis)
-
-      │
-      ▼
-
-Gmail (welcome email to lead)
-
-      │
-
-      └────────────── FALSE ──────────────►
-
-Handle Invalid → Telegram alert (missing fields warning)
+```
 ```
 
----
 
 # 🗂 Data Captured
 
