@@ -297,12 +297,6 @@ Every new form submission now triggers the full automation.
 ### Welcome Email
 ![Email](screenshots/email.png)
 ```
-
-### Telegram Alert
-
-```text
-screenshots/telegram.png
-```
 ---
 
 # 🔧 Customization Ideas
